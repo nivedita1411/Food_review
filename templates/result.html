@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment Analysis Result</title>
+    
+    <style>
+        body{
+            text-align: center;
+        }
+
+        h2{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
+
 
     <h1>Result</h1>
 
     {% if prediction == 1%}
-    <h2>Positive Review</h2>
+    <h2>Hey! Its a Positive review </h2>
 
     {%elif prediction ==0%}
-    <h2>Negative Review</h2>
+    <h2>Hey! Its a Negative review </h2>
     {% endif %}
 
-    <p>Prediction: {{ prediction }}</p>
+    <!-- <p>Prediction: {{ prediction }}</p> -->
     
 </body>
 </html>

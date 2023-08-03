@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment Analysis</title>
+    <style>
+
+        #container{
+
+            text-align: center;
+
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+        input{
+            background-color: orange;
+        }
+
+    </style>
 </head>
 <body>
 
-     <h1>Sentiment Analysis</h1>
-    <form action="/predict" method="post">
+    
+
+    <div id="container">
+
+        <h1>Sentiment Analysis</h1>
+
+        <div class="heading">
+            Welcome fellow Food Technologists!
+            Lets predict wheather the review is positive or negative
+        </div>
+        <br>
+        
+        <form action="/predict" method="post">
         <textarea name="text" placeholder="Enter your text here"></textarea>
+        <br>
         <input type="submit" value="Analyze">
     </form>
+
+    </div>
+    
     
 </body>
 </html>
